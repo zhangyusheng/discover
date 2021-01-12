@@ -86,6 +86,8 @@ func (s *ServiceRegister) Close() error {
 }
 
 func main() {
+        log.Println("hhh")
+        return
 	var endpoints = []string{"localhost:2379"}
 	ser, err := NewServiceRegister(endpoints, "/web/node1", "localhost:8000", 5)
 	if err != nil {
